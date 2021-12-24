@@ -5,9 +5,23 @@
     <artifactId>machine-learning-lib</artifactId>
     <version>1.0.0</version>
     <packaging>jar</packaging>
+    
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
+        <weka.version>3.8.3</weka.version>
     </properties>
+    
+    <name>Machine Learning Library</name>
+    
+    <description>A Machine Learning library.</description>
+    
+    <dependencies>
+        <dependency>
+            <groupId>nz.ac.waikato.cms.weka</groupId>
+            <artifactId>weka-stable</artifactId>
+            <version>${weka.version}</version>
+        </dependency>
+    </dependencies>
 </project>
